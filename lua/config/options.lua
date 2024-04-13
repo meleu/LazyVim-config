@@ -6,3 +6,9 @@
 if vim.fn.filereadable("~/.vimrc") then
   vim.cmd("source ~/.vimrc")
 end
+
+-- treat .bats files like shell scripts (useful to have shellcheck and shfmt
+-- functionalities even when working with bats files).
+vim.filetype.add({
+  extension = { bats = "sh" },
+})
