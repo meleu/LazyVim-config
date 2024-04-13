@@ -7,3 +7,9 @@
 -- vim keybindings (like tmux and Obsidian).
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
+
+-- in LazyVim the buffers kinda behave like tabs, then I want to navigate
+-- between buffers using `gt` (I found this useful to keep the same feel
+-- as when I use VSCodeVim extension).
+vim.keymap.set("n", "gt", ":bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "gT", ":bprevious<cr>", { desc = "Previous buffer" })
