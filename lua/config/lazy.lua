@@ -53,6 +53,10 @@ local setup = {
   },
 }
 
-local opts = {}
+local opts = {
+  change_detection = {
+    notify = false,
+  },
+}
 
 require("lazy").setup(setup, opts)
