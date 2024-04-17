@@ -10,6 +10,7 @@ return {
   -- NOTE: disabling noice also removes popup notifications
   { "folke/noice.nvim", enabled = false },
 
-  -- alpha-nvim: neovim "splashscreen"
+  -- disable the "dashboard" (which I sometimes refer as "splashscreen")
   { "goolord/alpha-nvim", enabled = false },
+  { "nvimdev/dashboard-nvim", enabled = false },
 }
