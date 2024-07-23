@@ -7,3 +7,7 @@
 -- and should never be overwritten
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
+
+-- navigate between buffers like they were tabs
+vim.keymap.set("n", "gt", ":bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "gT", ":bprevious<cr>", { desc = "Prev buffer" })
