@@ -12,5 +12,10 @@ return {
         fallback()
       end,
     })
+
+    -- enable borders for completion menu
+    opts.window = {
+      completion = cmp.config.window.bordered(),
+    }
   end,
 }
