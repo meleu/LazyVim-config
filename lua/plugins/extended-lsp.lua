@@ -8,5 +8,8 @@ return {
 
     -- use gR to "Go to References"
     keys[#keys + 1] = { "gR", ":Telescope lsp_references<cr>", desc = "[G]oto [R]eferences" }
+
+    -- use gh to "hover documentation"
+    keys[#keys + 1] = { "gh", vim.lsp.buf.hover, desc = "Hover" }
   end,
 }
