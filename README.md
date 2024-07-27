@@ -1,4 +1,6 @@
-# 💤 LazyVim
+# 💤 LazyVim - meleu's configs
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+This is my personal configurations on [LazyVim](https://lazyvim.org).
+
+I usually write about these customizations in <https://meleu.dev/notes/lazy-vim/>
+
