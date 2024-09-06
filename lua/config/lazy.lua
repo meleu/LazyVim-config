@@ -50,4 +50,8 @@ require("lazy").setup({
       },
     },
   },
+  -- meleu:
+  ui = {
+    border = "rounded",
+  },
 })

@@ -6,6 +6,14 @@
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
 
+----------------------------------------------------------------------
+--[ keep below this if the keymaps you do NOT want in VSCode. ]--
+----------------------------------------------------------------------
+if vim.g.vscode then
+  return
+end
+----------------------------------------------------------------------
+
 -- since LazyVim comes with bufferline, making buffers look like tabs,
 -- I want to navigate between buffers with gt/gT.
 vim.keymap.set("n", "gt", ":BufferLineCycleNext<CR>")
