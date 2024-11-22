@@ -1,5 +1,7 @@
 return {
   "Almo7aya/openingh.nvim",
+  -- enable it when running from inside VSCode
+  vscode = true,
 
   -- This init function is needed to copy URLs to clipboard.
   -- tip from here:
