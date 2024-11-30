@@ -8,15 +8,16 @@
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
 
-------------------------------------------------------------
---[ below this if the keymaps you do NOT want in VSCode. ]--
-------------------------------------------------------------
+--[ VSCode only configs ]--
 if vim.g.vscode then
+  -- the "close current buffer" in VSCode is kinda buggy
+  vim.keymap.del("n", "<leader>bd")
   return
 end
-------------------------------------------------------------
 
--- yeah! do NOT ovewrite gt/gT behavior! ;)
+-----------------------------------------------------------------------
+--[ put below this line only the keymaps you do NOT want in VSCode. ]--
+-----------------------------------------------------------------------
 
 -- since LazyVim comes with bufferline, making buffers look
 -- like tabs, I want to navigate between buffers with gt/gT.
