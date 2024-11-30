@@ -12,6 +12,13 @@ vim.filetype.add({
   extension = { bats = "sh" },
 })
 
+-- LSP Server to use for Ruby
+-- set to "ruby_lsp" to use it instead of "solargraph"
+-- vim.g.lazyvim_ruby_lsp = "ruby_lsp"
+vim.g.lazyvim_ruby_lsp = "solargraph"
+-- vim.g.lazyvim_ruby_formatter = "standardrb"
+vim.g.lazyvim_ruby_formatter = "rubocop"
+
 if vim.g.neovide then
-  vim.o.guifont = "Hack Nerd Font Mono:h12" -- text below applies for VimScript
+  vim.o.guifont = "CaskaydiaMono Nerd Font Mono:h12"
 end
