@@ -1,5 +1,6 @@
 return {
   "Wansmer/treesj",
+  vscode = true,
   keys = {
     {
       "<leader>ct",
@@ -12,5 +13,8 @@ return {
     "TSJSplit",
     "TSJJoin",
   },
-  opts = { use_default_keymaps = false },
+  opts = {
+    use_default_keymaps = false,
+    max_join_length = 200,
+  },
 }
