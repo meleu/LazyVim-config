@@ -2,13 +2,17 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+---------------------------------------------------------------------------
 -- disable H and L to navigate between buffers.
+---------------------------------------------------------------------------
 -- reasoning: H and L have a default Vim behavior
 -- and should never be overwritten
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
 
--- copy file path to the clipboard
+---------------------------------------------------------------------------
+-- copy file path to clipboard
+---------------------------------------------------------------------------
 -- source: https://stackoverflow.com/a/17096082/6354514
 vim.keymap.set("n", "<leader>yf", ':let @+ = expand("%")<cr>', {
   desc = "Yank relative file path",
