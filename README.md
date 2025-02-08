@@ -1,9 +1,4 @@
-# 💤 LazyVim - meleu's configs
+# 💤 LazyVim
 
-This is my personal configurations for [LazyVim](https://lazyvim.org).
-
-I usually write about these customizations in <https://meleu.dev/notes/lazy-vim/>
-
-```bash
-git clone git@github.com:meleu/LazyVim-config.git ~/.config/nvim
-```
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
