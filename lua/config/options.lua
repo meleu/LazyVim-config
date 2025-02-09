@@ -8,10 +8,12 @@ if vim.fn.filereadable("~/.vimrc") then
   vim.cmd("source ~/.vimrc")
 end
 
--- consider BATS files as shell scripts
 vim.filetype.add({
+  -- consider BATS files as shell scripts
   extension = { bats = "sh" },
-  -- TODO:: consider Dangerfile as Ruby
+
+  -- consider Dangerfile as ruby code
+  filename = { ["Dangerfile"] = "ruby" },
 })
 
 -- LSP Server to use for Ruby
