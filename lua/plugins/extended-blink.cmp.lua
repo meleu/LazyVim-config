@@ -4,8 +4,5 @@ return {
     keymap = {
       preset = "default",
     },
-    menu = {
-      border = "padded",
-    },
   },
 }
