@@ -20,8 +20,8 @@ vim.filetype.add({
 -- set to "ruby_lsp" to use it instead of "solargraph"
 vim.g.lazyvim_ruby_lsp = "ruby_lsp"
 -- vim.g.lazyvim_ruby_lsp = "solargraph"
-vim.g.lazyvim_ruby_formatter = "standardrb"
--- vim.g.lazyvim_ruby_formatter = "rubocop"
+-- vim.g.lazyvim_ruby_formatter = "standardrb"
+vim.g.lazyvim_ruby_formatter = "rubocop"
 
 -- disable animations
 vim.g.snacks_animate = false
