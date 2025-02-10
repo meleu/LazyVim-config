@@ -5,7 +5,15 @@ return {
   -- - disable for markdown and text files
 
   keys = {
-    { "<leader>cpd", ":Copilot disable<cr>", desc = "GitHub Copilot Disable" },
-    { "<leader>cpe", ":Copilot enable<cr>", desc = "GitHub Copilot Enable" },
+    {
+      "<leader>cpd",
+      ":Copilot disable<cr>",
+      mode = { "n", "v" },
+    },
+    {
+      "<leader>cpe",
+      ":Copilot enable<cr>",
+      mode = { "n", "v" },
+    },
   },
 }
