@@ -23,30 +23,33 @@ return {
       {
         -- Tip from here:
         -- https://github.com/CopilotC-Nvim/CopilotChat.nvim?tab=readme-ov-file#tips
-        "<leader>ccp",
+        "<leader>ap",
         function()
           local actions = require("CopilotChat.actions")
           require("CopilotChat.integrations.snacks").pick(actions.prompt_actions())
         end,
-        desc = "CopilotChat - Prompt actions",
+        desc = "Prompt Actions",
         mode = { "n", "v" },
       },
       {
-        "<leader>ccd",
+        -- "<leader>ccd",
+        "<leader>ad",
         ":CopilotChatDocs<cr>",
-        desc = "CopilotChat - Docs",
+        desc = "Docs",
         mode = { "v" },
       },
       {
-        "<leader>ccr",
+        -- "<leader>ccr",
+        "<leader>ar",
         ":CopilotChatReview<cr>",
-        desc = "CopilotChat - Review",
+        desc = "Review",
         mode = { "v" },
       },
       {
-        "<leader>cci",
+        -- "<leader>cci",
+        "<leader>ai",
         ":CopilotChatImprove<cr>",
-        desc = "CopilotChat - Improve",
+        desc = "Improve",
         mode = { "v" },
       },
     },

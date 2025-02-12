@@ -6,12 +6,12 @@ return {
 
   keys = {
     {
-      "<leader>cpd",
+      "<leader>acd",
       ":Copilot disable<cr>",
       mode = { "n", "v" },
     },
     {
-      "<leader>cpe",
+      "<leader>ace",
       ":Copilot enable<cr>",
       mode = { "n", "v" },
     },
