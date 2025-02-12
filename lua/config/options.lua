@@ -10,18 +10,25 @@ end
 
 vim.filetype.add({
   -- consider BATS files as shell scripts
-  extension = { bats = "sh" },
+  extension = {
+    bats = "sh",
+    blerc = "sh",
+  },
 
   -- consider Dangerfile as ruby code
   filename = { ["Dangerfile"] = "ruby" },
+
+  -- consider .code-workspace files as JSON
+  pattern = { [".*%.code%-workspace"] = "json" },
 })
 
 -- LSP Server to use for Ruby
 -- set to "ruby_lsp" to use it instead of "solargraph"
 vim.g.lazyvim_ruby_lsp = "ruby_lsp"
 -- vim.g.lazyvim_ruby_lsp = "solargraph"
--- vim.g.lazyvim_ruby_formatter = "standardrb"
-vim.g.lazyvim_ruby_formatter = "rubocop"
+-- vim.g.lazyvim_ruby_formatter = "rubocop"
+-- NOTE: using standardrb as formatter ignores project's .rubocop.yml
+vim.g.lazyvim_ruby_formatter = "standardrb"
 
 -- disable animations
 vim.g.snacks_animate = false
