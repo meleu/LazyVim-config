@@ -31,7 +31,7 @@ vim.g.lazyvim_ruby_lsp = "ruby_lsp"
 vim.g.lazyvim_ruby_formatter = "standardrb"
 
 -- disable animations
-vim.g.snacks_animate = false
+-- vim.g.snacks_animate = false
 
 if vim.g.neovide then
   vim.o.guifont = "CaskaydiaMono Nerd Font Mono:h14"
