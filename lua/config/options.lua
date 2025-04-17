@@ -34,5 +34,8 @@ vim.g.lazyvim_ruby_formatter = "standardrb"
 -- vim.g.snacks_animate = false
 
 if vim.g.neovide then
-  vim.o.guifont = "CaskaydiaMono Nerd Font Mono:h14"
+  local neovide_options_file = vim.fn.stdpath("config") .. "/lua/config/neovide-options.lua"
+  if vim.fn.filereadable(neovide_options_file) then
+    dofile(neovide_options_file)
+  end
 end
