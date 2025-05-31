@@ -1,5 +1,6 @@
 return {
   "folke/snacks.nvim",
+  vscode = false,
   opts = {
     zen = {
       -- make the buffer behind the zen buffer to not be shown

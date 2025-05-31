@@ -1,5 +1,6 @@
 return {
   "Wansmer/treesj",
+  vscode = true,
   keys = {
     {
       "<leader>ct",
