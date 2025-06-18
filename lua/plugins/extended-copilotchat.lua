@@ -1,6 +1,7 @@
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+    -- enabled = false,
     opts = {
       -- See Configuration section for options
       -- https://github.com/CopilotC-Nvim/CopilotChat.nvim?tab=readme-ov-file#configuration
@@ -12,21 +13,24 @@ return {
       },
       prompts = {
         Improve = {
-          prompt = "> /COPILOT_GENERATE\n\nRefactor selected code to improve readability and maintainability.",
+          prompt = "Refactor selected code to improve readability and maintainability.",
+        },
+        Rename = {
+          prompt = "Rename the variable in given selection with a more clear and descriptive name.",
+        },
+        Extract = {
+          prompt = "Extract the selected snippet into a separate function/method, with a descriptive name.",
         },
         Review = {
-          prompt = "> /COPILOT_REVIEW\n\nReview the selected code, with a special attention to its readability/maintainability.",
+          prompt = "Review the selected code, with a special attention to its readability and maintainability.",
         },
       },
     },
     keys = {
       {
-        -- Tip from here:
-        -- https://github.com/CopilotC-Nvim/CopilotChat.nvim?tab=readme-ov-file#tips
         "<leader>ap",
         function()
-          local actions = require("CopilotChat.actions")
-          require("CopilotChat.integrations.snacks").pick(actions.prompt_actions())
+          require("CopilotChat").select_prompt()
         end,
         desc = "Prompt Actions",
         mode = { "n", "v" },
