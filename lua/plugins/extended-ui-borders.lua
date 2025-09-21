@@ -1,13 +1,10 @@
 -- This is a centralized file with the goal to configure rounded borders for
--- different plugins, like:
--- * Mason dialog
--- * hover documentation
--- * LSP diagnostics
--- * completion/documentation hints
+-- different plugins.
 -- NOTE: borders in Lazy.nvim dialog is configured in `lua/config/lazy.lua`
 return {
   {
-    "williamboman/mason.nvim",
+    -- Mason dialog
+    "mason-org/mason.nvim",
     opts = {
       ui = {
         border = "rounded",
@@ -15,6 +12,7 @@ return {
     },
   },
   {
+    -- hover documentation
     "folke/noice.nvim",
     opts = {
       presets = {
@@ -23,6 +21,7 @@ return {
     },
   },
   {
+    -- LSP diagnostics
     "neovim/nvim-lspconfig",
     opts = function(_, opts)
       opts.diagnostics = {
@@ -33,6 +32,7 @@ return {
     end,
   },
   {
+    -- completion/documentation hints
     "saghen/blink.cmp",
     opts = {
       completion = {
