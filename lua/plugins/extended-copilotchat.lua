@@ -19,7 +19,7 @@ return {
           prompt = "Rename the variable in given selection with a more clear and descriptive name.",
         },
         Extract = {
-          prompt = "Extract the selected snippet into a separate function/method, with a descriptive name.",
+          prompt = "Extract the selected code into a separate function, with a descriptive name. Put the extracted function right below the current one, and replace the original code with a call to the new function.",
         },
         Review = {
           prompt = "Review the selected code, with a special attention to its readability and maintainability.",
@@ -36,21 +36,24 @@ return {
         mode = { "n", "v" },
       },
       {
-        -- "<leader>ccd",
+        "<leader>ae",
+        ":CopilotChatExplain<cr>",
+        desc = "Explain",
+        mode = { "v" },
+      },
+      {
         "<leader>ad",
         ":CopilotChatDocs<cr>",
         desc = "Docs",
         mode = { "v" },
       },
       {
-        -- "<leader>ccr",
         "<leader>ar",
         ":CopilotChatReview<cr>",
         desc = "Review",
         mode = { "v" },
       },
       {
-        -- "<leader>cci",
         "<leader>ai",
         ":CopilotChatImprove<cr>",
         desc = "Improve",
