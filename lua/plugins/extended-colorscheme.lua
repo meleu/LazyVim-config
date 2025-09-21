@@ -2,10 +2,11 @@ return {
   "folke/tokyonight.nvim",
   opts = {
     style = "night",
-    --   transparent = true,
-    --   styles = {
-    --     sidebars = "transparent",
-    --     floats = "transparent",
-    --   },
+    -- comment the lines below to disable transparency
+    transparent = true,
+    styles = {
+      sidebars = "transparent",
+      floats = "transparent",
+    },
   },
 }
