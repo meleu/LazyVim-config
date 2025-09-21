@@ -9,7 +9,8 @@ return {
     keys[#keys + 1] = { "gr", false }
 
     -- use gR to "Go to References"
-    -- keys[#keys + 1] = { "gR", ":Telescope lsp_references<cr>", desc = "[G]oto [R]eferences" }
+    -- NOTE: I still didn't figure how to show the list in the snacks picker
+    keys[#keys + 1] = { "gR", vim.lsp.buf.references, desc = "References", nowait = true }
 
     -- use gh to "hover documentation"
     keys[#keys + 1] = { "gh", vim.lsp.buf.hover, desc = "Hover" }
