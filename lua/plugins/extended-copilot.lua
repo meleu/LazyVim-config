@@ -1,8 +1,11 @@
 return {
   "zbirenbaum/copilot.lua",
+  -- enabled = false,
   event = "InsertEnter",
   opts = {
+
     filetypes = {
+      -- ["*"] = false,
       -- disable for markdown, json and text files
       markdown = false,
       json = false,

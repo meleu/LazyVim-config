@@ -8,6 +8,9 @@ if vim.fn.filereadable("~/.vimrc") then
   vim.cmd("source ~/.vimrc")
 end
 
+-- ----------------------------------------------------------------------
+-- File type customization
+-- ----------------------------------------------------------------------
 vim.filetype.add({
   -- consider BATS files as shell scripts
   extension = {
@@ -22,7 +25,9 @@ vim.filetype.add({
   pattern = { [".*%.code%-workspace"] = "json" },
 })
 
+-- ----------------------------------------------------------------------
 -- LSP Server to use for Ruby
+-- ----------------------------------------------------------------------
 -- set to "ruby_lsp" to use it instead of "solargraph"
 vim.g.lazyvim_ruby_lsp = "ruby_lsp"
 -- vim.g.lazyvim_ruby_lsp = "solargraph"
@@ -33,6 +38,7 @@ vim.g.lazyvim_ruby_formatter = "standardrb"
 -- disable animations
 -- vim.g.snacks_animate = false
 
+-- load neovide specific configs
 if vim.g.neovide then
   local neovide_options_file = vim.fn.stdpath("config") .. "/lua/config/neovide-options.lua"
   if vim.fn.filereadable(neovide_options_file) then
