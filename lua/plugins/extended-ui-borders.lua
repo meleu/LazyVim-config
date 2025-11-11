@@ -1,5 +1,9 @@
 -- This is a centralized file with the goal to configure rounded borders for
 -- different plugins.
+--
+-- TODO: put borders in neotest dialogs
+-- TODO: put borders in hover dialogs
+--
 -- NOTE: borders in Lazy.nvim dialog is configured in `lua/config/lazy.lua`
 return {
   {
@@ -12,7 +16,7 @@ return {
     },
   },
   {
-    -- hover documentation
+    -- documentation accessed via K
     "folke/noice.nvim",
     opts = {
       presets = {
