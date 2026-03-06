@@ -35,7 +35,7 @@ if vim.g.vscode then
   vim.keymap.del("n", "<leader>gg")
 
   -- disable snacks file explorer
-  -- vim.keymap.del("n", "<leader>e")
+  vim.keymap.del("n", "<leader>e")
 
   return
 end
