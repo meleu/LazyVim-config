@@ -5,4 +5,5 @@ return {
   { "tpope/vim-speeddating", vscode = true }, -- <C-a>/<C-x> to increase/decrease dates
   { "tpope/vim-rails", vscode = true }, -- awesome for Ruby on Rails
   { "tpope/vim-dispatch", vscode = true }, -- useful to work with vim-rails
+  { "barrettruth/live-server.nvim" }, -- useful to work with vim-rails
 }
