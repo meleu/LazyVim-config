@@ -6,5 +6,14 @@ return {
     keymap = {
       preset = "default",
     },
+    completion = {
+      menu = {
+        -- add a delay before showing the completion menu
+        auto_show_delay_ms = 1000,
+
+        --disaable menu auto show (still accessible via `<C-space>`)
+        -- auto_show = false
+      }
+    }
   },
 }
