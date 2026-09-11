@@ -14,7 +14,7 @@ vim.keymap.del("n", "<S-l>")
 -- copy file path to clipboard
 ---------------------------------------------------------------------------
 -- source: https://stackoverflow.com/a/17096082/6354514
-vim.keymap.set("n", "<leader>fy", ':let @+ = expand("%")<cr>', {
+vim.keymap.set("n", "<leader>fy", ':let @+ = expand("%:.")<cr>', {
   desc = "Yank relative file path",
 })
 vim.keymap.set("n", "<leader>fY", ':let @+ = expand("%:p")<cr>', {
