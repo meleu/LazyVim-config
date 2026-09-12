@@ -3,6 +3,7 @@ return {
   opts = {
     inlay_hints = { enabled = false },
     servers = {
+      regols = { enabled = false },
       ["*"] = {
         keys = {
           -- I want to use gr for "Go Replace" (ReplaceWithRegister plugin)
