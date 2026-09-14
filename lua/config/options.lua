@@ -3,9 +3,11 @@
 -- https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+local util = require("config.util")
+
 -- load my own "old" configs written in VimScript
-if vim.fn.filereadable("~/.vimrc") then
-  vim.cmd("source ~/.vimrc")
+if util.is_file_readable("~/.vimrc") then
+  vim.cmd.source("~/.vimrc")
 end
 
 -- ----------------------------------------------------------------------
@@ -42,7 +44,7 @@ vim.g.lazyvim_ruby_formatter = "standardrb"
 -- load neovide specific configs
 if vim.g.neovide then
   local neovide_options_file = vim.fn.stdpath("config") .. "/lua/config/neovide-options.lua"
-  if vim.fn.filereadable(neovide_options_file) then
+  if util.is_file_readable(neovide_options_file) then
     dofile(neovide_options_file)
   end
 end
