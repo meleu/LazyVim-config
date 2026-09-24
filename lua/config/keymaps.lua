@@ -48,3 +48,5 @@ end
 -- like tabs, I want to navigate between buffers with gt/gT.
 vim.keymap.set("n", "gt", ":bnext<cr>", { desc = "Next buffer" })
 vim.keymap.set("n", "gT", ":bprevious<cr>", { desc = "Prev buffer" })
+
+require("config.keymaps-claude")
